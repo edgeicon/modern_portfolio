@@ -1,5 +1,6 @@
 $primary-color: #444;
-$secondary-color: #fa9900;
+//#fa9900;
+$secondary-color: fa9900;
 $show-home-image: true;
 $home-image: url('../img/background.jpg');
 $background-opacity: 0.9;
@@ -30,6 +31,17 @@ $background-opacity: 0.9;
     }
 
 }
+
+// Set text primary-color
+@function set-text-color($color) {
+    @if (lightness($color) > 40) {
+        @return #000;
+    } @else {
+        @return #fff;
+    }
+
+}
+
 
 
 // Media Query Mixins
