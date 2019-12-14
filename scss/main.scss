@@ -2,7 +2,6 @@
 @import 'menu';
 
 
-
 * {
     box-sizing: border-box;
 }
@@ -31,6 +30,10 @@ h1, h2, h3 {
         margin-bottom: 2rem;
         padding: 0.2rem 1rem;
         background: rgba(darken($primary-color, 2),0.5);
+    }
+    &.jp-heading {
+        margin-top: -2rem;
+        padding: 0.2rem 1rem;
     }
 }
 
@@ -62,6 +65,8 @@ main {
 
     .icons {
         margin-top: 1rem;
+        background: set-text-color($primary-color);
+        color: set-text-color($primary-color);
 
         a {
             padding: 0.4rem;
