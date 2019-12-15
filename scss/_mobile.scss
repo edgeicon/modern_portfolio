@@ -77,5 +77,46 @@
     .projects {
         grid-template-columns: repeat(1, 1fr);
     }
-    
+
+
+
+    .menu-btn {
+        position: absolute;
+        z-index: 3;
+        right: 45px;
+        top: 45px;
+        cursor: pointer;
+        @include easeOut;
+
+        .btn-line {
+            width: 40px;
+            height: 5px;
+            margin: 0 0 7px 0;
+            background: set-text-color($primary-color);
+            @include easeOut;
+        }
+
+        //Rotate into X with Menu Lines
+        &.close {
+            transform: rotate(180deg);
+
+
+            .btn-line {
+                // Line 1 - Rotate
+                &:nth-child(1) {
+                    transform: rotate(45deg) translate(8px, 12px);
+                    background: $secondary-color;
+                }
+                // Line 2 - Hide
+                &:nth-child(2) {
+                    opacity: 0;
+                }
+                // Line 3 - Rotate
+                &:nth-child(3) {
+                    transform: rotate(-45deg) translate(7px, -6px);
+                    background: $secondary-color;
+                }
+            }
+        }
+    }
 }

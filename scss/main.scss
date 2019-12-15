@@ -1,4 +1,4 @@
-@import '_config';
+@import 'config';
 @import 'menu';
 
 
@@ -17,6 +17,19 @@ body {
 
 }
 
+
+.graph_frame{
+
+
+
+    .bg-div {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index:-100;
+        transform: rotate(-45deg);
+    }
+}
 // Headings
 
 h1, h2, h3 {
