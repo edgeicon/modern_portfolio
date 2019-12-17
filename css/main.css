@@ -139,7 +139,8 @@ h1, h2, h3 {
 
 a {
   color: #fff;
-  text-decoration: none; }
+  text-decoration: none;
+  target: "_blank"; }
 
 header {
   position: fixed;
