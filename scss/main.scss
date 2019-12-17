@@ -1,4 +1,4 @@
-@import '_config';
+@import 'config';
 @import 'menu';
 
 
@@ -54,6 +54,7 @@ h1, h2, h3 {
 a {
     color: #fff;
     text-decoration: none;
+    target: "_blank";
 
 }
 
